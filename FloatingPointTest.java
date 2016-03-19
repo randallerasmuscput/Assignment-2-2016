@@ -32,7 +32,8 @@ public class FloatingPointTest {
     return 6.1f;
     }
     @BeforeClass
-    public static void setUpClass() {
+    public static void setUpClass()
+    {
     }
     
     @AfterClass
