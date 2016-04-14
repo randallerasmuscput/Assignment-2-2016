@@ -11,41 +11,26 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
- *
  * Randall Erasmus
  */
 public class intTest {
-    
+
     public intTest() {
     }
+
     @Test
-    public void intTest(){
-         int actual = 2;
-         int expected = 2;
-    assertEquals("NOT EQUAL", actual, expected);
-    }
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
+    public void intTest()
+    {
+        integers obj =new integers();
+        obj.intTesting();
+
+        int expected = 14;
+        assertEquals("Integer Numbers differ",expected, obj.sum);
+
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }
